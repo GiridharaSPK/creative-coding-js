@@ -1,0 +1,50 @@
+<html>
+<body>
+<canvas width="600" height="600"></canvas>
+<script type="text/javascript">
+	let year = 2021;
+	let nextYear = year+1;
+
+	let dinner = 'pasta';
+	let sentance = 'Tonight, dinner will be' + dinner;
+
+
+	function saySomething(param) {
+		console.log(param)
+	}
+
+	saySomething('Hello')
+
+
+function add(a, b){
+	return a+b
+}
+
+let result = add(5,3)
+console.log(result)
+
+let multiply = (a,b) => {
+return a*b
+}
+console.log(multiply(5,7))
+
+let myCanvas = document.querySelector('canvas');
+let context = myCanvas.getContext('2d');
+
+context.fillStyle = 'blue'
+context.fillRect(100,100,400,400)
+
+context.lineWidth = 4
+context.beginPath();
+context.rect(100,100,400,400);
+context.stroke();
+
+
+context.beginPath();
+context.arc(300, 300, 100, 0, Math.PI * 2);
+context.stroke();
+
+
+</script>
+</body>
+</html>
