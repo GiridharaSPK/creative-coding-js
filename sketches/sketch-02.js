@@ -4,7 +4,6 @@ const settings = {
   dimensions: [ 1080, 1080 ]
 };
 
-
 const sketch = () => {
   return ({ context, width, height }) => {
     context.fillStyle = 'white';
